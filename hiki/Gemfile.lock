@@ -1,0 +1,16 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    erubis (2.7.0)
+    gem-man (0.3.0)
+    log4r (1.1.10)
+    rbdock (0.2.1)
+      erubis (~> 2.7.0)
+      gem-man
+      log4r (~> 1.1.10)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  rbdock
