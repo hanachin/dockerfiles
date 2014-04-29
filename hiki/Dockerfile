@@ -56,4 +56,4 @@ RUN cat hikiconf.rb.sample | sed -e "s/path to data/data/" hikiconf.rb.sample > 
 RUN sed -i -e "s/attach'/attach.cgi'/" hiki.ru
 
 EXPOSE 9292
-CMD ["./hiki.ru"]
+CMD LANG=ja_JP.UTF-8 rbenv exec rackup /hiki/hiki.ru
