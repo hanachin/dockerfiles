@@ -7,5 +7,5 @@ RUN apt-get update && apt-get install -y \
     byacc
 RUN wget http://i.loveruby.net/ja/rhg/ar/ruby-rhg.tar.gz
 RUN tar zxvf ruby-rhg.tar.gz
-RUN cd ruby-rhg
+WORKDIR /ruby-rhg
 RUN ./configure && make && make test && make install
