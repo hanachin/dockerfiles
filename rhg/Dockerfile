@@ -9,3 +9,4 @@ RUN wget http://i.loveruby.net/ja/rhg/ar/ruby-rhg.tar.gz
 RUN tar zxvf ruby-rhg.tar.gz
 WORKDIR /ruby-rhg
 RUN ./configure && make && make test && make install
+RUN apt-get -y install emacs global
